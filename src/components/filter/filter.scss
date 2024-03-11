@@ -1,0 +1,78 @@
+@import '../../responsive.scss';
+
+.filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h1 {
+    font-weight: 350;
+    font-size: 24px;
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    label {
+      font-size: 12px;
+    }
+
+    input,
+    select {
+      width: 100px;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      font-size: 14px;
+
+      @include sm {
+        width: 70px;
+      }
+    }
+  }
+
+  .top {
+    input {
+      width: 100%;
+      outline: none;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+
+    @include sm {
+      gap: 5px;
+    }
+
+    input {
+      outline: none;
+
+
+    }
+
+    button {
+      width: 60px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      background-color: #fece51;
+      border-radius: 5px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
